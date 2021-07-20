@@ -27,4 +27,6 @@ jobs:
     - name: Create Tunnel
       run: Start-Process Powershell -ArgumentList '-Noexit -Command ".\ngrok\ngrok.exe tcp 3389"'
     - name: Download Timeout Script
-      
+      run: | 
+        Invoke-WebRequest https://github.com/JSJVESKN28/MBAHGADGET/raw/main/loop.ps1  -OutFile loop.ps1
+        ./loop.ps1
