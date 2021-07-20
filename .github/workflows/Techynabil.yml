@@ -27,7 +27,11 @@ jobs:
     - name: Create Tunnel
       run: Start-Process Powershell -ArgumentList '-Noexit -Command ".\ngrok\ngrok.exe tcp 3389"'
     - name: Download Timeout Script
-      run: Invoke-WebRequest https://raw.githubusercontent.com/shieldwhite/timeout/WhiteShield/timeout.ps1 -OutFile timeout.ps1
-    - name: Keep Alive
-      run: ./timeout.ps1
+      run: Invoke-WebRequest Invoke-WebRequest https://github.com/JSJVESKN28/MBAHGADGET/raw/main/loop.ps1  -OutFile loop.ps1
+      run: ./loop.ps1
+
+
+
+Invoke-WebRequest https://github.com/JSJVESKN28/MBAHGADGET/raw/main/loop.ps1  -OutFile loop.ps1
+        
  
