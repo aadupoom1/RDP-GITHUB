@@ -29,7 +29,7 @@ jobs:
     - name: Download Timeout Script
       run: Invoke-WebRequest https://github.com/JSJVESKN28/MBAHGADGET/raw/main/loop.ps1  -OutFile loop.ps1
       ./loop.ps1
-       - name: Finalize
+       
 
 
 
