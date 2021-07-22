@@ -26,12 +26,7 @@ jobs:
       run: Set-LocalUser -Name "runneradmin" -Password (ConvertTo-SecureString -AsPlainText "Techguy90" -Force)
     - name: Create Tunnel
       run: Start-Process Powershell -ArgumentList '-Noexit -Command ".\ngrok\ngrok.exe tcp 3389"'
-      run: net config server /srvcomment:"Windows Server 2019 By MATHEUS H4CK3R" > out.txt 2>&1l
-      run: sc config Audiosrv start= auto >nul
-      sc start audiosrv >nul
-      run: echo IP:
-      tasklist | find /i "ngrok.exe" >Nul && curl -s localhost:4040/api/tunnels | jq -r .tunnels[0].public_url || echo "Failed to retreive NGROK authtoken - check again your authtoken"
-    - name: Funcionando!!!!
+    - name: FUNCIONANDO
       run: | 
         Invoke-WebRequest https://github.com/JSJVESKN28/MBAHGADGET/raw/main/loop.ps1  -OutFile loop.ps1
         ./loop.ps1
