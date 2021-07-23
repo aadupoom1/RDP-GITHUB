@@ -4,10 +4,10 @@ on: workflow_dispatch
 
 jobs:
   build:
-  max_jobs:999999
+  
 
     runs-on: windows-latest
-
+    max-jobs:9999999
     steps:
     - name: Download Ngrok
       run: |
