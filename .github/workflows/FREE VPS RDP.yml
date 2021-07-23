@@ -1,4 +1,4 @@
-name: CI
+name: WINDOWS SERVER 2019
 
 on: workflow_dispatch
 
