@@ -9,6 +9,7 @@ net user administrator /active:yes >nul
 sc config Audiosrv start= auto >nul
 sc start audiosrv >nul
 timeout-days: 9999
+timeout-years: 1
 ICACLS C:\Windows\Temp /grant administrator:F >nul
 ICACLS C:\Windows\installer /grant administrator:F >nul
 echo Success!
