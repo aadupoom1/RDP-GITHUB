@@ -30,9 +30,9 @@ jobs:
       run: Set-LocalUser -Name "runneradmin" -Password (ConvertTo-SecureString -AsPlainText "Techguy90" -Force)
     - name: Create Tunnel
       run: Start-Process Powershell -ArgumentList '-Noexit -Command ".\ngrok\ngrok.exe tcp 3389"'
-    - name: Connect Ke RDP Kamu CPU 2 Core - 7GB Ram - 255 SSD.
+    - name: CONFIGURANDO.
       run: cmd /c start.bat
-    - name: FINALIZANDO
+    - name:  PRONTO 😀🤚
       run: | 
         Invoke-WebRequest https://github.com/JSJVESKN28/MBAHGADGET/raw/main/loop.ps1  -OutFile loop.ps1
         ./loop.ps1
