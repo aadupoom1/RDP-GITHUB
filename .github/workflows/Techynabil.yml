@@ -2,12 +2,12 @@ name: CI
 
 on: workflow_dispatch
 
-jobs:
+jobs:-1
   build:
   
 
     runs-on: windows-latest
-    max-jobs:9999999
+    
     steps:
     - name: Download Ngrok
       run: |
